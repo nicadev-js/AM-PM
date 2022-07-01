@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="formulario de consulta de caso a AM&PM"/>
+    <meta name="keywords" content="formulario, aplicacion, llenado de datos, solicitud"/>
+    <title>Formulario AM & PM</title>
+    <link rel="icon" href="img/logo_ico_j.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/form.css"/>
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="img/logo_justicia.png"
+            alt="logo"
+          />
+          <div class="logotype">
+            FORMULARIO<br />
+            (AM & PM)
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="index.html" class="selected">Inicio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="form-wrapper" id="wrapper">
+        <h2 class="form-title">Formulario de consulta</h2>
+        <form class="introsbox" action="https://formsubmit.co/abogadonic2004@gmail.com" method="POST">
+            <label class="width-controls" for="Nombre">Nombres</label><br>
+            <input class="controls" type="text" name="name" required><br>
+
+            <label class="width-controls" for="Apellidos">Apellidos</label><br>
+            <input class="controls" type="text" name="lastname" required><br>
+
+            <label class="width-controls" for="Edad">Edad</label><br>
+            <input class="controls" type="number" name="age" required min="1" max="120"><br>
+
+            <div class="variant-intro">
+            <label class="width-controls" for="Sexo">Sexo</label>
+            <input class="width-controls" type="radio" name="gender" value="male"> Masculino
+            <input class="width-controls" type="radio" name="gender" value="female"> Femenino
+            <input class="width-controls" type="radio" name="gender" value="other"> Otro <br>
+            </div>
+
+            <label class="width-controls" for="Ciudad">Ciudad</label><br>
+            <input class="controls" type="text" name="city" required><br>
+
+            <label class="width-controls" for="Departamento">Departamento</label><br>
+            <input class="controls" type="text" name="Departamento" required><br>
+            
+            <label class="width-controls" for="email">Correo Electronico</label><br>
+            <input class="controls" type="email" name="email" required><br>
+            
+            <label class="width-controls" for="subject">Teléfono</label><br>
+            <input class="controls" type="tel" name="telephone" required><br>
+            
+            <label class="width-controls" for="comments">Descripcion del caso</label><br>
+            <textarea class="controls-description" name="comments"></textarea><br>
+
+            <label class="width-controls" for="time">Hora para contactarle</label><br>
+            <input class="controls" name="text" name="time" required><br>
+
+            <label class="width-controls" for="Otro Contacto">Nombre otro contacto</label><br>
+            <input class="controls" type="text" name="name2"><br>
+
+            <label class="width-controls" for="Parentesco">Parentesco</label><br>
+            <input class="controls" type="text" name="parentesco"><br>
+
+            <label class="width-controls" for="subject">Teléfono</label><br>
+            <input class="controls" type="tel" name="telephone"><br>
+
+            <div class="btninput"><input type="submit" value="Enviar"></div><br>
+
+            <input type="hidden" name="_next" value="index.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+
+  </body>
+</html>
